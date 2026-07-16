@@ -1,0 +1,117 @@
+/* Button Globals */
+.btn{
+  cursor: pointer;
+  transition: 250ms;
+  font-family: var(--typography-body-font-family);
+  font-size: var(--typography-body-scale-4-font-size);
+  font-weight: var(--typography-body-font-weight-regular);
+  line-height: var(--typography-body-scale-4-line-height);
+  letter-spacing: var(--typography-body-scale-4-letter-spacing);
+}
+
+/* Primary Button */
+.btn-primary{
+    background: var(--color-background-action-primary-idle, rgba(145, 190, 250, 0.06));
+    border: var(--stroke-scale-1, 1px) solid var(--color-border-action-primary-idle, rgba(145, 190, 250, 0.06));
+    border-radius: var(--radius-scale-3, 8px);
+    box-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--colors-light-blue-alpha-06, rgba(145, 190, 250, 0.06));
+    color: var(--color-foreground-action-primary-idle, #91BEFA);
+    &:hover{
+        background: var(--color-background-action-primary-hover, rgba(145, 190, 250, 0.12));
+        border: var(--stroke-scale-1, 1px) solid var(--color-border-action-primary-hover, rgba(145, 190, 250, 0.12));
+        border-radius: var(--radius-scale-3, 8px);
+        box-shadow: 0 0 var(--blur-scale-4, 16px) 0 var(--colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12));
+        color: var(--color-foreground-action-primary-hover, #91BEFA);
+    }
+    &:active{
+        transition: 125ms;
+        background: var(--color-background-action-primary-active, rgba(22, 22, 31, 0.06));
+        border: var(--stroke-scale-1, 1px) solid var(--color-border-action-primary-active, rgba(110, 163, 254, 0.12));
+        border-radius: var(--radius-scale-3, 8px);
+        box-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12)) inset;
+        color: var(--color-foreground-action-primary-active, #6EA3FE);
+    }
+    &:disabled{
+        cursor: not-allowed;
+        background: var(--color-border-action-primary-disabled, rgba(250, 253, 246, 0.06));
+        border: var(--stroke-scale-1, 1px) solid var(--color-border-action-primary-disabled, rgba(250, 253, 246, 0.06));
+        border-radius: var(--radius-scale-3, 8px);
+        box-shadow: 0 0 var(--blur-scale-2, 4px) 0 var(--colors-white-alpha-06, rgba(250, 253, 246, 0.06));
+        color: var(--color-foreground-action-primary-disabled, rgba(250, 253, 246, 0.06));
+    }
+}
+
+/* Secondary Button */
+.btn-secondary{
+    background: var(--color-background-action-secondary-idle, rgba(145, 190, 250, 0.06));
+    border: var(--stroke-scale-1, 1px) solid var(--color-border-action-secondary-idle, rgba(145, 190, 250, 0.06));
+    box-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--colors-light-blue-alpha-06, rgba(145, 190, 250, 0.06));
+    color: var(--color-foreground-action-secondary-idle, #91BEFA);
+    &:hover{
+        background: var(--color-background-action-secondary-hover, rgba(145, 190, 250, 0.12));
+        border: var(--stroke-scale-1, 1px) solid var(--color-border-action-secondary-hover, rgba(145, 190, 250, 0.12));
+        box-shadow: 0 0 var(--blur-scale-4, 16px) 0 var(--colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12));
+        color: var(--color-foreground-action-secondary-hover, #91BEFA);
+    }
+    &:active{
+        transition: 125ms;
+        background: var(--color-background-action-secondary-active, rgba(22, 22, 31, 0.06));
+        border: var(--stroke-scale-1, 1px) solid var(--color-border-action-secondary-active, rgba(110, 163, 254, 0.12));
+        box-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12)) inset;
+        color: var(--color-foreground-action-secondary-active, #6EA3FE);
+    }
+    &:disabled{
+        cursor: not-allowed;
+        background: var(--color-border-action-secondary-disabled, rgba(250, 253, 246, 0.06));
+        border: var(--stroke-scale-1, 1px) solid var(--color-border-action-secondary-disabled, rgba(250, 253, 246, 0.06));
+        box-shadow: 0 0 var(--blur-scale-2, 4px) 0 var(--colors-white-alpha-06, rgba(250, 253, 246, 0.06));
+        color: var(--color-foreground-action-secondary-disabled, rgba(250, 253, 246, 0.06));
+    }
+}
+
+/* Tertiary Button */
+.btn-tertiary{
+    background: var(--color-background-action-tertiary-idle, rgba(145, 190, 250, 0.06));
+    border: var(--stroke-scale-1, 1px) solid var(--color-border-action-tertiary-idle, rgba(145, 190, 250, 0.06));
+    box-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--colors-light-blue-alpha-06, rgba(145, 190, 250, 0.06));
+    color: var(--color-foreground-action-tertiary-idle, #91BEFA);
+    &:hover{
+        background: var(--color-background-action-tertiary-hover, rgba(145, 190, 250, 0.12));
+        border: var(--stroke-scale-1, 1px) solid var(--color-border-action-tertiary-hover, rgba(145, 190, 250, 0.12));
+        box-shadow: 0 0 var(--blur-scale-4, 16px) 0 var(--colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12));
+        color: var(--color-foreground-action-tertiary-hover, #91BEFA);
+    }
+    &:active{
+        transition: 125ms;
+        background: var(--color-background-action-tertiary-active, rgba(22, 22, 31, 0.06));
+        border: var(--stroke-scale-1, 1px) solid var(--color-border-action-tertiary-active, rgba(110, 163, 254, 0.12));
+        box-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12)) inset;
+        color: var(--color-foreground-action-tertiary-active, #6EA3FE);
+    }
+    &:disabled{
+        cursor: not-allowed;
+        background: var(--color-border-action-tertiary-disabled, rgba(250, 253, 246, 0.06));
+        border: var(--stroke-scale-1, 1px) solid var(--color-border-action-tertiary-disabled, rgba(250, 253, 246, 0.06));
+        box-shadow: 0 0 var(--blur-scale-2, 4px) 0 var(--colors-white-alpha-06, rgba(250, 253, 246, 0.06));
+        color: var(--color-foreground-action-tertiary-disabled, rgba(250, 253, 246, 0.06));
+    }
+}
+
+/* Small Button */
+.btn-sm{
+    display: inline-flex;
+}
+
+/* Base Button */
+.btn-base{
+    display: inline-flex;
+    padding: var(--space-padding-scale_2, 8px) var(--space-padding-scale_3, 16px);
+    align-items: center;
+    gap: var(--space-gap-scale_3, 8px);
+    border-radius: var(--radius-scale-3, 8px);
+}
+
+/* Large Button */
+.btn-lg{
+    display: inline-flex;
+}

@@ -1,0 +1,191 @@
+:root{
+      /* =========================
+     Foreground
+     ========================= */
+
+  /* Surface */
+  --color-foreground-surface-base: var(--colors-white);
+  --color-foreground-surface-subtle: var(--colors-white-alpha-48);
+  --color-foreground-surface-muted: var(--colors-light-blue-alpha-24);
+  --color-foreground-surface-accent: var(--colors-light-blue);
+
+
+  /* Action - Primary */
+  --color-foreground-action-primary-idle: var(--colors-light-blue);
+  --color-foreground-action-primary-hover: var(--colors-light-blue);
+  --color-foreground-action-primary-active: var(--colors-blue);
+  --color-foreground-action-primary-focus: var(--colors-blue-alpha-06);
+  --color-foreground-action-primary-current: var(--colors-green-alpha-06);
+  --color-foreground-action-primary-disabled: var(--colors-white-alpha-06);
+
+
+  /* Action - Secondary */
+  --color-foreground-action-secondary-idle: var(--colors-light-blue);
+  --color-foreground-action-secondary-hover: var(--colors-light-blue);
+  --color-foreground-action-secondary-active: var(--colors-blue);
+  --color-foreground-action-secondary-focus: var(--colors-white);
+  --color-foreground-action-secondary-current: var(--colors-white);
+  --color-foreground-action-secondary-disabled: var(--colors-white-alpha-06);
+
+
+  /* Action - Tertiary */
+  --color-foreground-action-tertiary-idle: var(--colors-white);
+  --color-foreground-action-tertiary-hover: var(--colors-white);
+  --color-foreground-action-tertiary-active: var(--colors-white-alpha-48);
+  --color-foreground-action-tertiary-focus: var(--colors-white);
+  --color-foreground-action-tertiary-current: var(--colors-white);
+  --color-foreground-action-tertiary-disabled: var(--colors-white-alpha-06);
+
+
+  /* Control - Primary */
+  --color-foreground-control-primary-idle: var(--colors-light-blue);
+  --color-foreground-control-primary-hover: var(--colors-light-blue);
+  --color-foreground-control-primary-active: var(--colors-light-blue);
+  --color-foreground-control-primary-focus: var(--colors-light-blue);
+  --color-foreground-control-primary-current: var(--colors-green-alpha-06);
+  --color-foreground-control-primary-disabled: var(--colors-white-alpha-06);
+
+
+  /* Control - Secondary */
+  --color-foreground-control-secondary-idle: var(--colors-white-alpha-72);
+  --color-foreground-control-secondary-hover: var(--colors-white);
+  --color-foreground-control-secondary-active: var(--colors-white-alpha-48);
+  --color-foreground-control-secondary-focus: var(--colors-white);
+  --color-foreground-control-secondary-current: var(--colors-green);
+  --color-foreground-control-secondary-disabled: var(--colors-white-alpha-06);
+
+
+
+  /* =========================
+     Background
+     ========================= */
+
+  /* Surface */
+  --color-background-surface-base: var(--colors-black);
+  --color-background-surface-subtle: var(--colors-white-alpha-12);
+  --color-background-surface-muted: var(--colors-light-blue-alpha-12);
+
+
+  /* Action - Primary */
+  --color-background-action-primary-idle: var(--colors-light-blue-alpha-06);
+  --color-background-action-primary-hover: var(--colors-light-blue-alpha-12);
+  --color-background-action-primary-active: var(--colors-black-alpha-06);
+  --color-background-action-primary-focus: var(--colors-blue-alpha-06);
+  --color-background-action-primary-current: var(--colors-green-alpha-06);
+  --color-background-action-primary-disabled: var(--colors-white-alpha-06);
+
+
+  /* Action - Secondary */
+  --color-background-action-secondary-idle: var(--colors-black-alpha-48);
+  --color-background-action-secondary-hover: var(--colors-black-alpha-48);
+  --color-background-action-secondary-active: var(--colors-black-alpha-48);
+  --color-background-action-secondary-focus: var(--colors-blue-alpha-06);
+  --color-background-action-secondary-current: var(--colors-green-alpha-06);
+  --color-background-action-secondary-disabled: var(--colors-black-alpha-48);
+
+
+  /* Action - Tertiary */
+  --color-background-action-tertiary-idle: var(--colors-black-alpha-48);
+  --color-background-action-tertiary-hover: var(--colors-black-alpha-48);
+  --color-background-action-tertiary-active: var(--colors-black-alpha-48);
+  --color-background-action-tertiary-focus: var(--colors-blue-alpha-06);
+  --color-background-action-tertiary-current: var(--colors-green-alpha-06);
+  --color-background-action-tertiary-disabled: var(--colors-black);
+
+
+  /* Control - Primary */
+  --color-background-control-primary-idle: var(--colors-blue-alpha-06);
+  --color-background-control-primary-hover: var(--colors-white-alpha-12);
+  --color-background-control-primary-active: var(--colors-light-blue-alpha-12);
+  --color-background-control-primary-focus: var(--colors-blue-alpha-06);
+  --color-background-control-primary-current: var(--colors-black-alpha-06);
+  --color-background-control-primary-disabled: var(--colors-black-alpha-12);
+
+
+  /* Control - Secondary */
+  --color-background-control-secondary-idle: var(--colors-black-alpha-06);
+  --color-background-control-secondary-hover: var(--colors-black-alpha-72);
+  --color-background-control-secondary-active: var(--colors-purple-alpha-06);
+  --color-background-control-secondary-focus: var(--colors-blue-alpha-06);
+  --color-background-control-secondary-current: var(--colors-light-blue-alpha-12);
+  --color-background-control-secondary-disabled: var(--colors-black-alpha-06);
+
+
+
+    /* =========================
+     Border
+     ========================= */
+
+  /* Surface */
+  --color-border-surface-base: var(--colors-white-alpha-06);
+  --color-border-surface-subtle: var(--colors-light-blue-alpha-06);
+  --color-border-surface-muted: var(--colors-white-alpha-06);
+
+
+  /* Action - Primary */
+  --color-border-action-primary-idle: var(--colors-light-blue-alpha-06);
+  --color-border-action-primary-hover: var(--colors-light-blue-alpha-12);
+  --color-border-action-primary-active: var(--colors-blue-alpha-12);
+  --color-border-action-primary-focus: var(--colors-blue-alpha-06);
+  --color-border-action-primary-current: var(--colors-green-alpha-06);
+  --color-border-action-primary-disabled: var(--colors-white-alpha-06);
+
+
+  /* Action - Secondary */
+  --color-border-action-secondary-idle: var(--colors-black);
+  --color-border-action-secondary-hover: var(--colors-light-blue-alpha-06);
+  --color-border-action-secondary-active: var(--colors-blue-alpha-06);
+  --color-border-action-secondary-focus: var(--colors-blue-alpha-06);
+  --color-border-action-secondary-current: var(--colors-green-alpha-06);
+  --color-border-action-secondary-disabled: var(--colors-white-alpha-06);
+
+
+  /* Action - Tertiary */
+  --color-border-action-tertiary-idle: var(--colors-black);
+  --color-border-action-tertiary-hover: var(--colors-black);
+  --color-border-action-tertiary-active: var(--colors-black);
+  --color-border-action-tertiary-focus: var(--colors-blue-alpha-06);
+  --color-border-action-tertiary-current: var(--colors-green-alpha-06);
+  --color-border-action-tertiary-disabled: var(--colors-black);
+
+
+  /* Control - Primary */
+  --color-border-control-primary-idle: var(--colors-light-blue-alpha-06);
+  --color-border-control-primary-hover: var(--colors-light-blue-alpha-12);
+  --color-border-control-primary-active: var(--colors-blue-alpha-06);
+  --color-border-control-primary-focus: var(--colors-blue-alpha-48);
+  --color-border-control-primary-current: var(--colors-green-alpha-06);
+  --color-border-control-primary-disabled: var(--colors-white-alpha-06);
+
+
+  /* Control - Secondary */
+  --color-border-control-secondary-idle: var(--colors-black-alpha-00);
+  --color-border-control-secondary-hover: var(--colors-black-alpha-00);
+  --color-border-control-secondary-active: var(--colors-black-alpha-00);
+  --color-border-control-secondary-focus: var(--colors-black-alpha-00);
+  --color-border-control-secondary-current: var(--colors-green);
+  --color-border-control-secondary-disabled: var(--colors-black-alpha-00);
+
+
+
+  /* =========================
+     Shadow
+     ========================= */
+
+  /* Action */
+  --color-shadow-action-idle: var(--colors-light-blue-alpha-06);
+  --color-shadow-action-hover: var(--colors-light-blue-alpha-12);
+  --color-shadow-action-active: var(--colors-black-alpha-12);
+  --color-shadow-action-focus: var(--colors-blue-alpha-12);
+  --color-shadow-action-current: var(--colors-green-alpha-12);
+  --color-shadow-action-disabled: var(--colors-white-alpha-12);
+
+
+  /* Control */
+  --color-shadow-control-idle: var(--colors-white-alpha-06);
+  --color-shadow-control-hover: var(--colors-light-blue-alpha-12);
+  --color-shadow-control-active: var(--colors-black-alpha-12);
+  --color-shadow-control-focus: var(--colors-blue-alpha-12);
+  --color-shadow-control-current: var(--colors-green-alpha-12);
+  --color-shadow-control-disabled: var(--colors-white-alpha-12);
+}

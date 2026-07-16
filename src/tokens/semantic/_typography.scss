@@ -1,0 +1,83 @@
+:root{
+      /* =========================
+     Body
+     ========================= */
+
+  --typography-body-font-family: var(--typography-font-family-sans);
+
+  --typography-body-font-weight-light: var(--typography-font-weight-light);
+  --typography-body-font-weight-regular: var(--typography-font-weight-regular);
+  --typography-body-font-weight-semibold: var(--typography-font-weight-semibold);
+  --typography-body-font-weight-bold: var(--typography-font-weight-bold);
+
+
+  /* Body Scale 1 */
+  --typography-body-scale-1-font-size: var(--typography-font-size-scale-1);
+  --typography-body-scale-1-line-height: var(--typography-line-height-scale-1);
+  --typography-body-scale-1-letter-spacing: var(--typography-letter-spacing-scale-0);
+
+
+  /* Body Scale 2 */
+  --typography-body-scale-2-font-size: var(--typography-font-size-scale-2);
+  --typography-body-scale-2-line-height: var(--typography-line-height-scale-2);
+  --typography-body-scale-2-letter-spacing: var(--typography-letter-spacing-scale-0);
+
+
+  /* Body Scale 3 */
+  --typography-body-scale-3-font-size: var(--typography-font-size-scale-3);
+  --typography-body-scale-3-line-height: var(--typography-line-height-scale-3);
+  --typography-body-scale-3-letter-spacing: var(--typography-letter-spacing-scale-0);
+
+
+  /* Body Scale 4 */
+  --typography-body-scale-4-font-size: var(--typography-font-size-scale-4);
+  --typography-body-scale-4-line-height: var(--typography-line-height-scale-4);
+  --typography-body-scale-4-letter-spacing: var(--typography-letter-spacing-scale-0);
+
+
+  /* Body Scale 5 */
+  --typography-body-scale-5-font-size: var(--typography-font-size-scale-5);
+  --typography-body-scale-5-line-height: var(--typography-line-height-scale-5);
+  --typography-body-scale-5-letter-spacing: var(--typography-letter-spacing-scale-0);
+
+
+
+  /* =========================
+     Heading
+     ========================= */
+
+  --typography-heading-font-family: var(--typography-font-family-serif);
+
+  --typography-heading-font-weight-semibold: var(--typography-font-weight-semibold);
+  --typography-heading-font-weight-bold: var(--typography-font-weight-bold);
+
+
+  /* Heading Scale 1 */
+  --typography-heading-scale-1-font-size: var(--typography-font-size-scale-1);
+  --typography-heading-scale-1-line-height: var(--typography-line-height-scale-1);
+  --typography-heading-scale-1-letter-spacing: var(--typography-letter-spacing-scale-0);
+
+
+  /* Heading Scale 2 */
+  --typography-heading-scale-2-font-size: var(--typography-font-size-scale-2);
+  --typography-heading-scale-2-line-height: var(--typography-line-height-scale-2);
+  --typography-heading-scale-2-letter-spacing: var(--typography-letter-spacing-scale-0);
+
+
+  /* Heading Scale 3 */
+  --typography-heading-scale-3-font-size: var(--typography-font-size-scale-3);
+  --typography-heading-scale-3-line-height: var(--typography-line-height-scale-3);
+  --typography-heading-scale-3-letter-spacing: var(--typography-letter-spacing-scale-0);
+
+
+  /* Heading Scale 4 */
+  --typography-heading-scale-4-font-size: var(--typography-font-size-scale-4);
+  --typography-heading-scale-4-line-height: var(--typography-line-height-scale-4);
+  --typography-heading-scale-4-letter-spacing: var(--typography-letter-spacing-scale-0);
+
+
+  /* Heading Scale 5 */
+  --typography-heading-scale-5-font-size: var(--typography-font-size-scale-5);
+  --typography-heading-scale-5-line-height: var(--typography-line-height-scale-5);
+  --typography-heading-scale-5-letter-spacing: var(--typography-letter-spacing-scale-0);
+}

@@ -1,0 +1,20 @@
+{
+  "name": "93",
+  "version": "0.1.0",
+  "description": "93 design system",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:sass": "sass src/93.scss dist/93.css --style=compressed --no-source-map --load-path=src",
+    "build:sass:dev": "sass src/93.scss dist/93.css --style=expanded --embed-sources --load-path=src",
+    "watch:sass": "sass src/93.scss dist/93.css --watch --style=expanded --embed-sources --load-path=src",
+    "dev": "npm run watch:sass",
+    "build": "npm run clean && npm run build:sass",
+    "lint:scss": "stylelint \"src/**/*.scss\"",
+    "lint:fix": "stylelint \"src/**/*.scss\" --fix"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard-scss": "^13.0.0"
+  }
+}
