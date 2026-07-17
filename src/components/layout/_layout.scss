@@ -1,0 +1,143 @@
+/* ====================
+Row, Column, Grid
+==================== */
+ds-row {
+    display: flex;
+    flex-direction: row;
+}
+
+ds-col {
+    display: flex;
+    flex-direction: column;
+}
+
+ds-grid {
+    display: grid;
+}
+
+ds-row,
+ds-col,
+ds-grid {
+    --layout-gap: 0;
+    gap: var(--layout-gap);
+}
+
+/* Gaps */
+ds-row[gap="xs"],
+ds-col[gap="xs"],
+ds-grid[gap="xs"] {
+    --layout-gap: var(--space-gap-xs);
+}
+
+ds-row[gap="sm"],
+ds-col[gap="sm"],
+ds-grid[gap="sm"] {
+    --layout-gap: var(--space-gap-sm);
+}
+
+ds-row[gap="base"],
+ds-col[gap="base"],
+ds-grid[gap="base"] {
+    --layout-gap: var(--space-gap-base);
+}
+
+ds-row[gap="lg"],
+ds-col[gap="lg"],
+ds-grid[gap="lg"] {
+    --layout-gap: var(--space-gap-lg);
+}
+
+ds-row[gap="xl"],
+ds-col[gap="xl"],
+ds-grid[gap="xl"] {
+    --layout-gap: var(--space-gap-xl);
+}
+
+/* Alignment */
+ds-row[align="start"],
+ds-col[align="start"] {
+    align-items: flex-start;
+}
+
+ds-row[align="center"],
+ds-col[align="center"] {
+    align-items: center;
+}
+ 
+ds-row[align="end"],
+ds-col[align="end"] {
+    align-items: flex-end;
+}
+
+ds-row[align="stretch"],
+ds-col[align="stretch"] {
+    align-items: stretch;
+}
+
+/* Justification */
+ds-row[justify="start"],
+ds-col[justify="start"] {
+    justify-content: flex-start;
+}
+
+ds-row[justify="center"],
+ds-col[justify="center"] {
+    justify-content: center;
+}
+
+ds-row[justify="end"],
+ds-col[justify="end"] {
+    justify-content: flex-end;
+}
+
+ds-row[justify="between"],
+ds-col[justify="between"] {
+    justify-content: space-between;
+}
+
+ds-row[justify="around"],
+ds-col[justify="around"] {
+    justify-content: space-around;
+}
+
+ds-row[justify="evenly"],
+ds-col[justify="evenly"] {
+    justify-content: space-evenly;
+}
+
+/* Columns */
+ds-grid[columns="2"] {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+ds-grid[columns="4"] {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+ds-grid[columns="6"] {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+ds-grid[columns="8"] {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+ds-grid[columns="10"] {
+    grid-template-columns: repeat(10, 1fr);
+}
+
+ds-grid[columns="12"] {
+    grid-template-columns: repeat(12, 1fr);
+}
+
+ds-grid[columns="14"] {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+ds-grid[columns="16"] {
+    grid-template-columns: repeat(10, 1fr);
+}
+
+ds-grid[columns="18"] {
+    grid-template-columns: repeat(12, 1fr);
+}

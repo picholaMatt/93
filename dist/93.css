@@ -323,25 +323,25 @@
   --typography-body-font-weight-semibold: var(--typography-font-weight-semibold);
   --typography-body-font-weight-bold: var(--typography-font-weight-bold);
   /* Body Scale 1 */
-  --typography-body-scale-1-font-size: var(--typography-font-size-scale-1);
-  --typography-body-scale-1-line-height: var(--typography-line-height-scale-1);
-  --typography-body-scale-1-letter-spacing: var(--typography-letter-spacing-scale-0);
+  --typography-body-xs-font-size: var(--typography-font-size-scale-1);
+  --typography-body-xs-line-height: var(--typography-line-height-scale-1);
+  --typography-body-xs-letter-spacing: var(--typography-letter-spacing-scale-0);
   /* Body Scale 2 */
-  --typography-body-scale-2-font-size: var(--typography-font-size-scale-2);
-  --typography-body-scale-2-line-height: var(--typography-line-height-scale-2);
-  --typography-body-scale-2-letter-spacing: var(--typography-letter-spacing-scale-0);
+  --typography-body-sm-font-size: var(--typography-font-size-scale-2);
+  --typography-body-sm-line-height: var(--typography-line-height-scale-2);
+  --typography-body-sm-letter-spacing: var(--typography-letter-spacing-scale-0);
   /* Body Scale 3 */
-  --typography-body-scale-3-font-size: var(--typography-font-size-scale-3);
-  --typography-body-scale-3-line-height: var(--typography-line-height-scale-3);
-  --typography-body-scale-3-letter-spacing: var(--typography-letter-spacing-scale-0);
+  --typography-body-base-font-size: var(--typography-font-size-scale-3);
+  --typography-body-base-line-height: var(--typography-line-height-scale-3);
+  --typography-body-base-letter-spacing: var(--typography-letter-spacing-scale-0);
   /* Body Scale 4 */
-  --typography-body-scale-4-font-size: var(--typography-font-size-scale-4);
-  --typography-body-scale-4-line-height: var(--typography-line-height-scale-4);
-  --typography-body-scale-4-letter-spacing: var(--typography-letter-spacing-scale-0);
+  --typography-body-lg-font-size: var(--typography-font-size-scale-4);
+  --typography-body-lg-line-height: var(--typography-line-height-scale-4);
+  --typography-body-lg-letter-spacing: var(--typography-letter-spacing-scale-0);
   /* Body Scale 5 */
-  --typography-body-scale-5-font-size: var(--typography-font-size-scale-5);
-  --typography-body-scale-5-line-height: var(--typography-line-height-scale-5);
-  --typography-body-scale-5-letter-spacing: var(--typography-letter-spacing-scale-0);
+  --typography-body-xl-font-size: var(--typography-font-size-scale-5);
+  --typography-body-xl-line-height: var(--typography-line-height-scale-5);
+  --typography-body-xl-letter-spacing: var(--typography-letter-spacing-scale-0);
   /* =========================
      Heading
      ========================= */
@@ -349,25 +349,25 @@
   --typography-heading-font-weight-semibold: var(--typography-font-weight-semibold);
   --typography-heading-font-weight-bold: var(--typography-font-weight-bold);
   /* Heading Scale 1 */
-  --typography-heading-scale-1-font-size: var(--typography-font-size-scale-1);
-  --typography-heading-scale-1-line-height: var(--typography-line-height-scale-1);
-  --typography-heading-scale-1-letter-spacing: var(--typography-letter-spacing-scale-0);
+  --typography-heading-xs-font-size: var(--typography-font-size-scale-1);
+  --typography-heading-xs-line-height: var(--typography-line-height-scale-1);
+  --typography-heading-xs-letter-spacing: var(--typography-letter-spacing-scale-0);
   /* Heading Scale 2 */
-  --typography-heading-scale-2-font-size: var(--typography-font-size-scale-2);
-  --typography-heading-scale-2-line-height: var(--typography-line-height-scale-2);
-  --typography-heading-scale-2-letter-spacing: var(--typography-letter-spacing-scale-0);
+  --typography-heading-sm-font-size: var(--typography-font-size-scale-2);
+  --typography-heading-sm-line-height: var(--typography-line-height-scale-2);
+  --typography-heading-sm-letter-spacing: var(--typography-letter-spacing-scale-0);
   /* Heading Scale 3 */
-  --typography-heading-scale-3-font-size: var(--typography-font-size-scale-3);
-  --typography-heading-scale-3-line-height: var(--typography-line-height-scale-3);
-  --typography-heading-scale-3-letter-spacing: var(--typography-letter-spacing-scale-0);
+  --typography-heading-base-font-size: var(--typography-font-size-scale-3);
+  --typography-heading-base-line-height: var(--typography-line-height-scale-3);
+  --typography-heading-base-letter-spacing: var(--typography-letter-spacing-scale-0);
   /* Heading Scale 4 */
-  --typography-heading-scale-4-font-size: var(--typography-font-size-scale-4);
-  --typography-heading-scale-4-line-height: var(--typography-line-height-scale-4);
-  --typography-heading-scale-4-letter-spacing: var(--typography-letter-spacing-scale-0);
+  --typography-heading-lg-font-size: var(--typography-font-size-scale-4);
+  --typography-heading-lg-line-height: var(--typography-line-height-scale-4);
+  --typography-heading-lg-letter-spacing: var(--typography-letter-spacing-scale-0);
   /* Heading Scale 5 */
-  --typography-heading-scale-5-font-size: var(--typography-font-size-scale-5);
-  --typography-heading-scale-5-line-height: var(--typography-line-height-scale-5);
-  --typography-heading-scale-5-letter-spacing: var(--typography-letter-spacing-scale-0);
+  --typography-heading-xl-font-size: var(--typography-font-size-scale-5);
+  --typography-heading-xl-line-height: var(--typography-line-height-scale-5);
+  --typography-heading-xl-letter-spacing: var(--typography-letter-spacing-scale-0);
 }
 
 *,
@@ -464,9 +464,21 @@ body {
 }
 
 /* Button Globals */
-.btn {
+.ds-button {
+  --button-bg: transparent;
+  --button-border: transparent;
+  --button-color: inherit;
+  --button-shadow: none;
   cursor: pointer;
   transition: 250ms;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-gap-scale_3, 8px);
+  background: var(--button-bg);
+  border: var(--button-border);
+  color: var(--button-color);
+  box-shadow: var(--button-shadow);
   font-family: var(--typography-body-font-family);
   font-size: var(--typography-body-scale-4-font-size);
   font-weight: var(--typography-body-font-weight-regular);
@@ -475,243 +487,255 @@ body {
 }
 
 /* Primary Button */
-.btn-primary {
-  background: var(--color-background-action-primary-idle, rgba(145, 190, 250, 0.06));
-  border: var(--stroke-scale-1, 1px) solid var(--color-border-action-primary-idle, rgba(145, 190, 250, 0.06));
-  border-radius: var(--radius-scale-3, 8px);
-  box-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--colors-light-blue-alpha-06, rgba(145, 190, 250, 0.06));
-  color: var(--color-foreground-action-primary-idle, #91BEFA);
+.ds-button[variant=primary] {
+  --button-bg: var(--color-background-action-primary-idle, rgba(145, 190, 250, 0.06));
+  --button-border: var(--stroke-scale-1, 1px) solid var(--color-border-action-primary-idle, rgba(145, 190, 250, 0.06));
+  --button-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--button-colors-light-blue-alpha-06, rgba(145, 190, 250, 0.06));
+  --button-color: var(--color-foreground-action-primary-idle, #91BEFA);
 }
-.btn-primary:hover {
-  background: var(--color-background-action-primary-hover, rgba(145, 190, 250, 0.12));
-  border: var(--stroke-scale-1, 1px) solid var(--color-border-action-primary-hover, rgba(145, 190, 250, 0.12));
-  border-radius: var(--radius-scale-3, 8px);
-  box-shadow: 0 0 var(--blur-scale-4, 16px) 0 var(--colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12));
-  color: var(--color-foreground-action-primary-hover, #91BEFA);
+.ds-button[variant=primary]:hover {
+  --button-bg: var(--color-background-action-primary-hover, rgba(145, 190, 250, 0.12));
+  --button-border: var(--stroke-scale-1, 1px) solid var(--color-border-action-primary-hover, rgba(145, 190, 250, 0.12));
+  --button-shadow: 0 0 var(--blur-scale-4, 16px) 0 var(--button-colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12));
+  --button-color: var(--color-foreground-action-primary-hover, #91BEFA);
 }
-.btn-primary:active {
+.ds-button[variant=primary]:active {
   transition: 125ms;
-  background: var(--color-background-action-primary-active, rgba(22, 22, 31, 0.06));
-  border: var(--stroke-scale-1, 1px) solid var(--color-border-action-primary-active, rgba(110, 163, 254, 0.12));
-  border-radius: var(--radius-scale-3, 8px);
-  box-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12)) inset;
-  color: var(--color-foreground-action-primary-active, #6EA3FE);
+  --button-bg: var(--color-background-action-primary-active, rgba(22, 22, 31, 0.06));
+  --button-border: var(--stroke-scale-1, 1px) solid var(--color-border-action-primary-active, rgba(110, 163, 254, 0.12));
+  --button-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--button-colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12)) inset;
+  --button-color: var(--color-foreground-action-primary-active, #6EA3FE);
 }
-.btn-primary:disabled {
+.ds-button[variant=primary]:disabled {
   cursor: not-allowed;
-  background: var(--color-border-action-primary-disabled, rgba(250, 253, 246, 0.06));
-  border: var(--stroke-scale-1, 1px) solid var(--color-border-action-primary-disabled, rgba(250, 253, 246, 0.06));
-  border-radius: var(--radius-scale-3, 8px);
-  box-shadow: 0 0 var(--blur-scale-2, 4px) 0 var(--colors-white-alpha-06, rgba(250, 253, 246, 0.06));
-  color: var(--color-foreground-action-primary-disabled, rgba(250, 253, 246, 0.06));
+  --button-bg: var(--color-border-action-primary-disabled, rgba(250, 253, 246, 0.06));
+  --button-border: var(--stroke-scale-1, 1px) solid var(--color-border-action-primary-disabled, rgba(250, 253, 246, 0.06));
+  --button-shadow: 0 0 var(--blur-scale-2, 4px) 0 var(--button-colors-white-alpha-06, rgba(250, 253, 246, 0.06));
+  --button-color: var(--color-foreground-action-primary-disabled, rgba(250, 253, 246, 0.06));
 }
 
 /* Secondary Button */
-.btn-secondary {
-  background: var(--color-background-action-secondary-idle, rgba(145, 190, 250, 0.06));
-  border: var(--stroke-scale-1, 1px) solid var(--color-border-action-secondary-idle, rgba(145, 190, 250, 0.06));
-  box-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--colors-light-blue-alpha-06, rgba(145, 190, 250, 0.06));
-  color: var(--color-foreground-action-secondary-idle, #91BEFA);
+.ds-button[variant=secondary] {
+  --button-bg: var(--color-background-action-secondary-idle, rgba(145, 190, 250, 0.06));
+  --button-border: var(--stroke-scale-1, 1px) solid var(--color-border-action-secondary-idle, rgba(145, 190, 250, 0.06));
+  --button-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--button-colors-light-blue-alpha-06, rgba(145, 190, 250, 0.06));
+  --button-color: var(--color-foreground-action-secondary-idle, #91BEFA);
 }
-.btn-secondary:hover {
-  background: var(--color-background-action-secondary-hover, rgba(145, 190, 250, 0.12));
-  border: var(--stroke-scale-1, 1px) solid var(--color-border-action-secondary-hover, rgba(145, 190, 250, 0.12));
-  box-shadow: 0 0 var(--blur-scale-4, 16px) 0 var(--colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12));
-  color: var(--color-foreground-action-secondary-hover, #91BEFA);
+.ds-button[variant=secondary]:hover {
+  --button-bg: var(--color-background-action-secondary-hover, rgba(145, 190, 250, 0.12));
+  --button-border: var(--stroke-scale-1, 1px) solid var(--color-border-action-secondary-hover, rgba(145, 190, 250, 0.12));
+  --button-shadow: 0 0 var(--blur-scale-4, 16px) 0 var(--button-colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12));
+  --button-color: var(--color-foreground-action-secondary-hover, #91BEFA);
 }
-.btn-secondary:active {
+.ds-button[variant=secondary]:active {
   transition: 125ms;
-  background: var(--color-background-action-secondary-active, rgba(22, 22, 31, 0.06));
-  border: var(--stroke-scale-1, 1px) solid var(--color-border-action-secondary-active, rgba(110, 163, 254, 0.12));
-  box-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12)) inset;
-  color: var(--color-foreground-action-secondary-active, #6EA3FE);
+  --button-bg: var(--color-background-action-secondary-active, rgba(22, 22, 31, 0.06));
+  --button-border: var(--stroke-scale-1, 1px) solid var(--color-border-action-secondary-active, rgba(110, 163, 254, 0.12));
+  --button-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--button-colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12)) inset;
+  --button-color: var(--color-foreground-action-secondary-active, #6EA3FE);
 }
-.btn-secondary:disabled {
+.ds-button[variant=secondary]:disabled {
   cursor: not-allowed;
-  background: var(--color-border-action-secondary-disabled, rgba(250, 253, 246, 0.06));
-  border: var(--stroke-scale-1, 1px) solid var(--color-border-action-secondary-disabled, rgba(250, 253, 246, 0.06));
-  box-shadow: 0 0 var(--blur-scale-2, 4px) 0 var(--colors-white-alpha-06, rgba(250, 253, 246, 0.06));
-  color: var(--color-foreground-action-secondary-disabled, rgba(250, 253, 246, 0.06));
+  --button-bg: var(--color-border-action-secondary-disabled, rgba(250, 253, 246, 0.06));
+  --button-border: var(--stroke-scale-1, 1px) solid var(--color-border-action-secondary-disabled, rgba(250, 253, 246, 0.06));
+  --button-shadow: 0 0 var(--blur-scale-2, 4px) 0 var(--button-colors-white-alpha-06, rgba(250, 253, 246, 0.06));
+  --button-color: var(--color-foreground-action-secondary-disabled, rgba(250, 253, 246, 0.06));
 }
 
 /* Tertiary Button */
-.btn-tertiary {
-  background: var(--color-background-action-tertiary-idle, rgba(145, 190, 250, 0.06));
-  border: var(--stroke-scale-1, 1px) solid var(--color-border-action-tertiary-idle, rgba(145, 190, 250, 0.06));
-  box-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--colors-light-blue-alpha-06, rgba(145, 190, 250, 0.06));
-  color: var(--color-foreground-action-tertiary-idle, #91BEFA);
+.ds-button[variant=tertiary] {
+  --button-bg: var(--color-background-action-tertiary-idle, rgba(145, 190, 250, 0.06));
+  --button-border: var(--stroke-scale-1, 1px) solid var(--color-border-action-tertiary-idle, rgba(145, 190, 250, 0.06));
+  --button-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--button-colors-light-blue-alpha-06, rgba(145, 190, 250, 0.06));
+  --button-color: var(--color-foreground-action-tertiary-idle, #91BEFA);
 }
-.btn-tertiary:hover {
-  background: var(--color-background-action-tertiary-hover, rgba(145, 190, 250, 0.12));
-  border: var(--stroke-scale-1, 1px) solid var(--color-border-action-tertiary-hover, rgba(145, 190, 250, 0.12));
-  box-shadow: 0 0 var(--blur-scale-4, 16px) 0 var(--colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12));
-  color: var(--color-foreground-action-tertiary-hover, #91BEFA);
+.ds-button[variant=tertiary]:hover {
+  --button-bg: var(--color-background-action-tertiary-hover, rgba(145, 190, 250, 0.12));
+  --button-border: var(--stroke-scale-1, 1px) solid var(--color-border-action-tertiary-hover, rgba(145, 190, 250, 0.12));
+  --button-shadow: 0 0 var(--blur-scale-4, 16px) 0 var(--button-colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12));
+  --button-color: var(--color-foreground-action-tertiary-hover, #91BEFA);
 }
-.btn-tertiary:active {
+.ds-button[variant=tertiary]:active {
   transition: 125ms;
-  background: var(--color-background-action-tertiary-active, rgba(22, 22, 31, 0.06));
-  border: var(--stroke-scale-1, 1px) solid var(--color-border-action-tertiary-active, rgba(110, 163, 254, 0.12));
-  box-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12)) inset;
-  color: var(--color-foreground-action-tertiary-active, #6EA3FE);
+  --button-bg: var(--color-background-action-tertiary-active, rgba(22, 22, 31, 0.06));
+  --button-border: var(--stroke-scale-1, 1px) solid var(--color-border-action-tertiary-active, rgba(110, 163, 254, 0.12));
+  --button-shadow: 0 0 var(--blur-scale-3, 8px) 0 var(--button-colors-light-blue-alpha-12, rgba(145, 190, 250, 0.12)) inset;
+  --button-color: var(--color-foreground-action-tertiary-active, #6EA3FE);
 }
-.btn-tertiary:disabled {
+.ds-button[variant=tertiary]:disabled {
   cursor: not-allowed;
-  background: var(--color-border-action-tertiary-disabled, rgba(250, 253, 246, 0.06));
-  border: var(--stroke-scale-1, 1px) solid var(--color-border-action-tertiary-disabled, rgba(250, 253, 246, 0.06));
-  box-shadow: 0 0 var(--blur-scale-2, 4px) 0 var(--colors-white-alpha-06, rgba(250, 253, 246, 0.06));
-  color: var(--color-foreground-action-tertiary-disabled, rgba(250, 253, 246, 0.06));
+  --button-bg: var(--color-border-action-tertiary-disabled, rgba(250, 253, 246, 0.06));
+  --button-border: var(--stroke-scale-1, 1px) solid var(--color-border-action-tertiary-disabled, rgba(250, 253, 246, 0.06));
+  --button-shadow: 0 0 var(--blur-scale-2, 4px) 0 var(--button-colors-white-alpha-06, rgba(250, 253, 246, 0.06));
+  --button-color: var(--color-foreground-action-tertiary-disabled, rgba(250, 253, 246, 0.06));
 }
 
 /* Small Button */
-.btn-sm {
-  display: inline-flex;
+.ds-button[size=sm] {
+  padding: var(--space-padding-sm, 4px) var(--space-padding-base, 8px);
+  border-radius: var(--radius-scale-3, 8px);
+  font-size: var(--typography-body-base-font-size);
+  line-height: var(--typography-body-base-line-height);
 }
 
 /* Base Button */
-.btn-base {
-  display: inline-flex;
-  padding: var(--space-padding-scale_2, 8px) var(--space-padding-scale_3, 16px);
-  align-items: center;
-  gap: var(--space-gap-scale_3, 8px);
+.ds-button[size=base] {
+  padding: var(--space-padding-base, 8px) var(--space-padding-lg, 12px);
   border-radius: var(--radius-scale-3, 8px);
+  font-size: var(--typography-body-lg-font-size);
+  line-height: var(--typography-body-lg-line-height);
 }
 
 /* Large Button */
-.btn-lg {
-  display: inline-flex;
+.ds-button[size=lg] {
+  padding: var(--space-padding-lg, 12px) var(--space-padding-xl, 16px);
+  border-radius: var(--radius-scale-3, 8px);
+  font-size: var(--typography-body-xl-font-size);
+  line-height: var(--typography-body-xl-line-height);
+}
+
+/* ====================
+Row, Column, Grid
+==================== */
+ds-row {
+  display: flex;
+  flex-direction: row;
+}
+
+ds-col {
+  display: flex;
+  flex-direction: column;
+}
+
+ds-grid {
+  display: grid;
+}
+
+ds-row,
+ds-col,
+ds-grid {
+  --layout-gap: 0;
+  gap: var(--layout-gap);
 }
 
 /* Gaps */
-.gap-2xs {
-  gap: var(--space-gap-2xs);
+ds-row[gap=xs],
+ds-col[gap=xs],
+ds-grid[gap=xs] {
+  --layout-gap: var(--space-gap-xs);
 }
 
-.gap-xs {
-  gap: var(--space-gap-xs);
+ds-row[gap=sm],
+ds-col[gap=sm],
+ds-grid[gap=sm] {
+  --layout-gap: var(--space-gap-sm);
 }
 
-.gap-sm {
-  gap: var(--space-gap-sm);
+ds-row[gap=base],
+ds-col[gap=base],
+ds-grid[gap=base] {
+  --layout-gap: var(--space-gap-base);
 }
 
-.gap-base {
-  gap: var(--space-gap-base);
+ds-row[gap=lg],
+ds-col[gap=lg],
+ds-grid[gap=lg] {
+  --layout-gap: var(--space-gap-lg);
 }
 
-.gap-lg {
-  gap: var(--space-gap-lg);
+ds-row[gap=xl],
+ds-col[gap=xl],
+ds-grid[gap=xl] {
+  --layout-gap: var(--space-gap-xl);
 }
 
-.gap-xl {
-  gap: var(--space-gap-xl);
+/* Alignment */
+ds-row[align=start],
+ds-col[align=start] {
+  align-items: flex-start;
 }
 
-/* Padding */
-.padding-xs {
-  padding: var(--space-padding-xs);
+ds-row[align=center],
+ds-col[align=center] {
+  align-items: center;
 }
 
-.padding-sm {
-  padding: var(--space-padding-sm);
+ds-row[align=end],
+ds-col[align=end] {
+  align-items: flex-end;
 }
 
-.padding-base {
-  padding: var(--space-padding-base);
+ds-row[align=stretch],
+ds-col[align=stretch] {
+  align-items: stretch;
 }
 
-.padding-lg {
-  padding: var(--space-padding-lg);
+/* Justification */
+ds-row[justify=start],
+ds-col[justify=start] {
+  justify-content: flex-start;
 }
 
-.padding-xl {
-  padding: var(--space-padding-xl);
+ds-row[justify=center],
+ds-col[justify=center] {
+  justify-content: center;
 }
 
-.padding-2xl {
-  padding: var(--space-padding-2xl);
+ds-row[justify=end],
+ds-col[justify=end] {
+  justify-content: flex-end;
 }
 
-.row-2xs {
-  display: flex;
-  flex-direction: row;
-  gap: var(--space-gap-2xs);
+ds-row[justify=between],
+ds-col[justify=between] {
+  justify-content: space-between;
 }
 
-.row-xs {
-  display: flex;
-  flex-direction: row;
+ds-row[justify=around],
+ds-col[justify=around] {
+  justify-content: space-around;
 }
 
-.row-sm {
-  display: flex;
-  flex-direction: row;
-  gap: var(--space-gap-sm);
+ds-row[justify=evenly],
+ds-col[justify=evenly] {
+  justify-content: space-evenly;
 }
 
-.row-base {
-  display: flex;
-  flex-direction: row;
-  gap: var(--space-gap-base);
+/* Columns */
+ds-grid[columns="2"] {
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.row-lg {
-  display: flex;
-  flex-direction: row;
-  gap: var(--space-gap-lg);
+ds-grid[columns="4"] {
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.row-xl {
-  display: flex;
-  flex-direction: row;
-  gap: var(--space-gap-xl);
+ds-grid[columns="6"] {
+  grid-template-columns: repeat(6, 1fr);
 }
 
-.row-2xl {
-  display: flex;
-  flex-direction: row;
-  gap: var(--space-gap-2xl);
+ds-grid[columns="8"] {
+  grid-template-columns: repeat(8, 1fr);
 }
 
-.column-2xs {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-gap-2xs);
+ds-grid[columns="10"] {
+  grid-template-columns: repeat(10, 1fr);
 }
 
-.column-xs {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-gap-xs);
+ds-grid[columns="12"] {
+  grid-template-columns: repeat(12, 1fr);
 }
 
-.column-sm {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-gap-sm);
+ds-grid[columns="14"] {
+  grid-template-columns: repeat(8, 1fr);
 }
 
-.column-base {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-gap-base);
+ds-grid[columns="16"] {
+  grid-template-columns: repeat(10, 1fr);
 }
 
-.column-lg {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-gap-lg);
-}
-
-.column-xl {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-gap-xl);
-}
-
-.column-2xl {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-gap-2xl);
+ds-grid[columns="18"] {
+  grid-template-columns: repeat(12, 1fr);
 }
 
 /*# sourceMappingURL=93.css.map */

@@ -14,18 +14,160 @@
   </head>
 
   <body>
-    <div class="column-xl padding-2xl">
-      <section class="row-xl">
-        <button class="btn btn-primary btn-base">this is a primary button</button>
-        <button class="btn btn-secondary btn-base">this is a seconadry button</button>
-        <button class="btn btn-tertiary btn-base">this is a tertiary button</button>
-      </section>
-      <section class="row-xl">
-        <button class="btn btn-primary btn-base" disabled>this is a primary button</button>
-        <button class="btn btn-secondary btn-base" disabled>this is a seconadry button</button>
-        <button class="btn btn-tertiary btn-base" disabled>this is a tertiary button</button>
-      </section>
-    </div>
+    <ds-grid gap="xl" columns="1">
+      <ds-col gap="base">
+        <ds-row gap="base">
+          <button
+          class="ds-button"
+          variant="primary"
+          size="sm">
+          primary button
+          </button>
+
+          <button
+          class="ds-button"
+          variant="secondary"
+          size="sm">
+          secondary button
+          </button>
+
+          <button
+          class="ds-button"
+          variant="tertiary"
+          size="sm">
+          tertiary button
+          </button>
+        </ds-row>
+
+        <ds-row gap="base">
+          <button
+          class="ds-button"
+          variant="primary"
+          size="sm"
+          disabled>
+          primary button
+          </button>
+
+          <button
+          class="ds-button"
+          variant="secondary"
+          size="sm"
+          disabled>
+          secondary button
+          </button>
+
+          <button
+          class="ds-button"
+          variant="tertiary"
+          size="sm"
+          disabled>
+          tertiary button
+          </button>
+        </ds-row>
+      </ds-col>
+
+      <ds-col gap="base">
+        <ds-row gap="base">
+          <button
+          class="ds-button"
+          variant="primary"
+          size="base">
+          primary button
+          </button>
+
+          <button
+          class="ds-button"
+          variant="secondary"
+          size="base">
+          secondary button
+          </button>
+
+          <button
+          class="ds-button"
+          variant="tertiary"
+          size="base">
+          tertiary button
+          </button>
+        </ds-row>
+
+        <ds-row gap="base">
+          <button
+          class="ds-button"
+          variant="primary"
+          size="base"
+          disabled>
+          primary button
+          </button>
+
+          <button
+          class="ds-button"
+          variant="secondary"
+          size="base"
+          disabled>
+          secondary button
+          </button>
+
+          <button
+          class="ds-button"
+          variant="tertiary"
+          size="base"
+          disabled>
+          tertiary button
+          </button>
+        </ds-row>
+      </ds-col>
+
+      <ds-col gap="base">
+        <ds-row gap="base">
+          <button
+          class="ds-button"
+          variant="primary"
+          size="lg">
+          primary button
+          </button>
+
+          <button
+          class="ds-button"
+          variant="secondary"
+          size="lg">
+          secondary button
+          </button>
+
+          <button
+          class="ds-button"
+          variant="tertiary"
+          size="lg">
+          tertiary button
+          </button>
+        </ds-row>
+
+        <ds-row gap="base">
+          <button
+          class="ds-button"
+          variant="primary"
+          size="lg"
+          disabled>
+          primary button
+          </button>
+
+          <button
+          class="ds-button"
+          variant="secondary"
+          size="lg"
+          disabled>
+          secondary button
+          </button>
+
+          <button
+          class="ds-button"
+          variant="tertiary"
+          size="lg"
+          disabled>
+          tertiary button
+          </button>
+        </ds-row>
+      </ds-col>
+    </ds-col>
 
     <script src="./button.js"></script>
   </body>
